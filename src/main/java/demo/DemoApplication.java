@@ -14,6 +14,11 @@ public class DemoApplication {
 		return "Hello world";
 	}
 
+	@RequestMapping(value = "/kill")
+	public void kill() {
+		System.exit(1);
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
